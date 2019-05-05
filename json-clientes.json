@@ -1,0 +1,34 @@
+[{
+	"id": 124451,
+	"nome": "Jose da Silva",
+	"nomeFantasia": "Bar do Zé",
+	"logradouro": "Rua ABC 15",
+	"bairro": "Mirassol",
+	"cidade": "Salto",
+	"uf": "SP",
+	"limiteCredito": 1500,
+	"condicoesPagamento": [{
+			"codigo": 1,
+			"descricao": "A vista"
+		}, {
+			"codigo": 10,
+			"descricao": "Boleto 7 dias"
+		},
+		{
+			"codigo": 15,
+			"descricao": "Boleto 21 dias"
+		}]
+}, {
+	"id": 124451,
+	"nome": "Jose da Silva",
+	"nomeFantasia": "Bar do Zé",
+	"endereco": "Rua ABC",
+	"bairro": "Mirassol",
+	"cidade": "Salto",
+	"uf": "SP",
+	"limiteCredito": 1500,
+	"condicoesPagamento": [{
+		"codigo": 1,
+		"descricao": "A vista"
+	}]
+}]
