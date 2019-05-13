@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken';
 class AuthController {
 
     public router = express.Router();
+    public secured = false;
 
     constructor() {
         this.initRoutes();
@@ -32,6 +33,7 @@ class AuthController {
             } else {
                 let token = jwt.sign({ id: usuario.id, username: usuario.nome }, 'private-key', { expiresIn: 129600 });
                 res.json({
+                    usuario: usuario,
                     success: true,
                     err: null,
                     token

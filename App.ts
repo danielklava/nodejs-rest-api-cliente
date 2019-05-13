@@ -7,7 +7,9 @@ import exjwt from 'express-jwt';
 import logger from 'morgan';
 import cors from 'cors';
 
-const jwtMW = exjwt({ secret: 'private-key' });
+const secretkey = 'private-key';
+
+const jwtMW = exjwt({ secret: secretkey });
 
 class App {
     public app: express.Application;
@@ -60,6 +62,7 @@ class App {
             console.log("Listening on port: " + this.port);
         })
     }
+
 }
 
 export default App;

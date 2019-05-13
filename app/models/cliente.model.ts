@@ -29,6 +29,9 @@ export default class Cliente extends Model<Cliente> {
 	@Column
 	uf: string;
 
+	@Column
+	limiteCredito: string;
+
 	@BelongsToMany(() => CondicaoPagamento, () => CondicaoCliente)
 	condicoes: CondicaoPagamento[]
 }
